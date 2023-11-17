@@ -5,12 +5,18 @@ body {
 button {
     width: 120px;
     height: 32px;
-    background: #333;
+    background: linear-gradient(to right, #333, rgb(116, 114, 114));
     color: #FFF;
     font-family: Roboto;
     font-size: 20px;
     font-weight: 800;
     cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    margin: 0 5px 5px 0;
+    box-shadow: 2px 2px 2px #333;
 }
 
 header {

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Lora";
+    src: url(./font/Lora-VariableFont_wght.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -30,6 +35,7 @@ header a {
 
 main {
     margin: 5px 20px 5px 20px;
+    font-family: "Lora";
 }
 
 .main-description {
@@ -42,11 +48,34 @@ main {
     justify-content: space-between;
 }
 
-.map, .status, .video-description, .player, .song, .song-description {
+.map, .player, .song, .text-and-icon {
     width: 45%;
     font-size: 20px;
     display: flex;
     align-items: center;
+}
+
+.text-and-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.text-and-icon img:hover {
+    width: 32px;
+    height: 32px;
+}
+
+.music img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.music img:hover {
+    width: 27px;
+    height: 27px;
 }
 
 .social-media h4 {
@@ -69,6 +98,11 @@ main {
     margin-right: 15px;
 }
 
+.facebook img:hover {
+    width: 42px;
+    height: 42px;
+}
+
 .instagram img {
     width: 50px;
     height: 50px;
@@ -76,9 +110,19 @@ main {
     margin-right: 10px;
 }
 
+.instagram img:hover {
+    width: 52px;
+    height: 52px;
+}
+
 .youtube img {
     width: 60px;
     height: 60px;
+}
+
+.youtube img:hover {
+    width: 62px;
+    height: 62px;
 }
 
 footer {

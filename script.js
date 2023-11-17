@@ -5,8 +5,8 @@ function isOpen() {
     let minutes = currentTime.getMinutes();
     let currentTimeFormat = `${hours}:${minutes}`;
     if(currentTimeFormat <= closedTime) {
-        return '<----- Наш магазин наразі відчинено. Чекаємо вас:)';
-    } else return '<----- Наш магазин наразі зачинено. Чекаємо вас завтра:)';
+        return 'Наш магазин наразі відчинено. Чекаємо вас:)';
+    } else return 'Наш магазин наразі зачинено. Чекаємо вас завтра:)';
 }
 
 let status = isOpen();
