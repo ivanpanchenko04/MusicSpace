@@ -4,14 +4,31 @@
 <head>
     <title>Головна</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.js"></script>
+    <link rel="Stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/redmond/jquery-ui.css" />
 </head>
 
 <body>
     <header>
         <div class="header-links">
             <div><a href="index.html">Головна</a></div>
-            <div><a href="item.html">Товари</a></div>
-            <div><a href="#">Зв'язок</a></div>
+            <div><a href="item.html" class="dropdownLink">Товари</a>
+                <ul class="dropdownMenu">
+                    <li><a href="#">Гітари</a></li>
+                    <li><a href="#">Скрипки</a></li>
+                    <li><a href="#">Ударні</a></li>
+                    <li><a href="#">Клавішні</a></li>
+                    <li><a href="#">Духові</a></li>
+                </ul>
+            </div>
+            <div><a href="#" class="openDialog">Зв'язок</a>
+                <div class="dialog">
+                    <img src="./img/xmark-solid.svg" alt="Close" class="close">
+                    <textarea placeholder="Напишіть свою думку"></textarea>
+                    <button class="send">Надіслати</button>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -31,7 +48,7 @@
                 <img src="./img/location-dot-solid.svg" alt="Location">
                 <div id="status" class="status"></div>
             </div>
-            
+
         </div>
 
         <div class="video">
