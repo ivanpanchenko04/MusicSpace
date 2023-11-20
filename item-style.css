@@ -6,17 +6,25 @@ button {
     width: 120px;
     height: 32px;
     background: linear-gradient(to right, #333, rgb(116, 114, 114));
+    cursor: pointer;
+    border: none;
+}
+
+button a {
     color: #FFF;
     font-family: Roboto;
     font-size: 20px;
     font-weight: 800;
-    cursor: pointer;
-    border: none;
+    text-decoration: none;
 }
 
 button:hover {
     margin: 0 5px 5px 0;
     box-shadow: 2px 2px 2px #333;
+}
+
+form button {
+    margin-top: 5px;
 }
 
 header {
@@ -49,6 +57,7 @@ main {
     display: flex;
     flex-flow: row nowrap;
     margin-top: 5px;
+    margin-bottom: 35px;
 }
 
 .left {
@@ -74,10 +83,11 @@ main {
     z-index: 1;
 }
 
-.description {
+.overlay {
     position: absolute;
     z-index: 1;
     overflow: hidden;
+    width: 50%;
 }
 
 .description p {
@@ -94,12 +104,14 @@ main {
     font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
-    z-index: 1;
-    margin-top: 660px;
 }
 
 .order button, .items-order button {
     margin-left: 10px;
+}
+
+.order p {
+    margin-top: 12px;
 }
 
 .right {
@@ -136,6 +148,10 @@ main {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+}
+
+.items-order p {
+    margin-top: 12px;
 }
 
 .items-description {
