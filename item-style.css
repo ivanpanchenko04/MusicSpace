@@ -106,7 +106,8 @@ main {
     font-weight: 400;
 }
 
-.order button, .items-order button {
+.order button,
+.items-order button {
     margin-left: 10px;
 }
 
@@ -127,7 +128,8 @@ main {
     font-weight: 700;
 }
 
-.right p, .right li {
+.right p,
+.right li {
     color: #000;
     font-family: Roboto;
     font-size: 20px;
@@ -137,9 +139,18 @@ main {
 .right img {
     max-width: 250px;
     height: auto;
+    cursor: pointer;
+    overflow: clip;
+    object-fit: cover;
+    transition: transform 0.5s;
 }
 
-.first-item, .second-item {
+.right img:hover {
+    transform: scale(1.02);
+}
+
+.first-item,
+.second-item {
     display: flex;
     flex-flow: row nowrap;
 }
