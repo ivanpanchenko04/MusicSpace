@@ -224,6 +224,12 @@ footer {
 
 .right-text {
     padding-top: 32px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#catalog-link {
+    margin-right: 25px;
 }
 
 .right-text a {
